@@ -1,0 +1,113 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	box-sizing: border-box
+		
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.wrapper
+	width: 100%
+	max-width: 1170px
+	margin: 0 auto
+header
+	background: url(../img/Surfing.png) no-repeat center
+	height: 650px
+ul
+	margin: 0
+	padding: 0
+	list-style: none
+.header__top-line
+	display: flex
+	padding-top: 30px
+	margin-bottom: 130px
+	justify-content: space-between
+.header-mnu
+	display: flex
+	li
+		a
+			transition: all .25s ease
+			text-transform: uppercase
+			padding: 8px 10px
+			text-decoration: none
+			color: #000
+			&:hover
+				background-color: #00b0ff
+				color: #fff
+.icon
+	display: flex
+	li
+		a
+			margin-left: 10px
+			padding: 8px 18px
+			background-color: #fff
+			border-radius: 50%
+			box-shadow: 0 0 5px #ccc
+.icons--fb
+	background: url(../img/icon/fb.png) center no-repeat
+.icons--in
+	background: url(../img/icon/in.png) center no-repeat
+.icons--messeng
+	background: url(../img/icon/messang.png) center no-repeat
+.header__main
+	display: flex
+	flex-direction: column
+	align-items: center
+.header__text
+	font-size: 50px
+.header__decs
+	font-size: 24px
+	color: #fff
+	text-shadow: 1px 1px 16px #000
+.board-slide
+	display: flex
+	width: 100%
+	max-width: 1030px
+.imagen
+	max-width: 400px
+	overflow: hidden
+.imagen__nav
+	display: flex
+	flex-direction: column
+	a
+		img
+			width: 60px
+@import "media" // Всегда в конце
